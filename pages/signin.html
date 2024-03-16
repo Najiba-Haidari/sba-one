@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <!-- customized style sheet link -->
+    <link rel="stylesheet" href="../styles/services.css">
+    <!-- boostrap link -->
+    <!-- <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  /> -->
+  <!-- internal style -->
+  <style>
+    main{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .form{
+        width: 30%;
+        box-shadow: rgba(31, 55, 40, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        padding: 20px;
+        transition-property: all;
+        transition-duration: 1s;
+    }
+    .form:hover{
+        box-shadow: rgba(6, 71, 62, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        transform: rotateY(0.1turn);
+    }
+    .form-title{
+        margin-top: 10px;
+    }
+    #login-img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+    }
+    input{
+        box-sizing: border-box;
+        width: 80%;
+        padding: 10px;
+        margin: px;
+        border: none;
+        box-shadow: rgb(190, 184, 184) 0px 2px 2px 1px;
+    }
+    #submit{
+        margin:20px;
+        background-color: rgb(60, 158, 224);
+        color: white;
+        font-size: 1.1em;
+    }
+    #submit:hover{
+        background-color: aqua;
+    }
+
+    p a {
+        text-decoration: none;
+    }
+  </style>
+  </head>
+    <body id="home">
+    <!-- header -->
+    <header >
+        <nav>
+            <ul>
+                <li class="link1"><a  href="./index.html">Home</a></li>
+                <li class="link2"><a  href="./services.html">Services</a></li>
+                <li class="link3"><a href="./about.html">About Us</a></li>
+                <li class="link4"><a  href="./signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main  -->
+    <main>
+        <div class="form">
+            <img src="data:image/jpeg;base64,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" alt="login" id="login-img" />
+            <h2 class="form-title">User Login</h2>
+            <form action="submit">
+              <br />
+              <input
+                type="text"
+                name="userName"
+                id="email"
+                required
+                placeholder="Email"
+              />
+              <br />
+              <br />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+      
+              <br />
+              <input type="button" value="Login" name="submit" id="submit" />
+              <p><a href="#">Forgot Password?</a></p>
+              <p><a href="#">Sign Up</a></p>
+            </form>
+          </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <h3>CONTACT US</h3>
+            <H4><em></em> HealthCare Center</em></H4>
+            <address>0110 S Morris St, Harvard Ave, 01110</address> 
+            <p>Website: healthCare@care.com</p>
+            <p><a href="tel:+4733378901">+00 000 00 000</a></p>
+            <p>Happy to help you!</p>
+        </div>
+    </footer>
+
+<!-- bootstrap script link -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>

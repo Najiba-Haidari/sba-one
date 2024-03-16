@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> -->
+    <!-- customized style sheet link -->
+    <link rel="stylesheet" href="../styles/services.css">
+    <!-- boostrap link -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+</head>
+    <body id="home">
+    <!-- header -->
+    <header >
+        <nav>
+            <ul>
+                <li class="link1"><a  href="./index.html">Home</a></li>
+                <li class="link2"><a  href="./services.html">Services</a></li>
+                <li class="link3"><a href="./about.html">About Us</a></li>
+                <li class="link4"><a  href="./signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- main  -->
+    <main id="main">
+        <!-- section 1 of main -->
+        <div id="section1">
+            <h1>Internal Medicine, Emergencies and More</h1>
+            <p>Our doctors in all our branches provides general prescriptions and offers corrective laser eye surgery co-management as well. You can get in touch with our doctor's office to set up an appointment at your convenience and learn more about some of our key services below.</p>
+            <p> We are proud to serve the general health care needs of our neighbors in <strong>Highlands Ranch</strong> ,<strong>Parker</strong> ,<strong>Castle Rock</strong> ,<strong>Littleton</strong>  and <strong>Lone Tree</strong> .</p>
+        </div>
+
+        <!-- services details -->
+        <div class="service-container p-5">
+            <hr>
+            <h2 class="text-center p-5 text-success">Our Services</h2>
+            <div class="container d-flex flex-row flex-wrap justify-content-evenly" id="section2">
+                <a target="_blank" class="card-link text-black text-decoration-none m-2 shadow" href="https://www.google.com/">
+                    <div class="card" style="width: 18rem;">
+                        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dry Eye</h5>
+                            <p class="card-text">Dry eye syndrome (DES) is a chronic condition that develops when your eyes do not produce and maintain enough tears to keep the eye’s surface lubricated.</p>
+                            <!-- <a href="#" class="btn btn-primary">Read More ...</a> -->
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" class="card-link text-black text-decoration-none m-2 shadow" href="https://www.google.com/">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.emeraldpediatricandfamilyclinic.com/wp-content/uploads/pediatrician-220b.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pediatric Medicine</h5>
+                            <p class="card-text">Dry eye syndrome (DES) is a chronic condition that develops when your eyes do not produce and maintain enough tears to keep the eye’s surface lubricated.</p>
+                            <!-- <a href="#" class="btn btn-primary">Read More ...</a> -->
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" class="card-link text-black text-decoration-none m-2 shadow" href="https://www.google.com/">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.childrenscolorado.org/globalassets/your-visit/urgent-care-emergency-care.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Emergency Care</h5>
+                            <p class="card-text">Dry eye syndrome (DES) is a chronic condition that develops when your eyes do not produce and maintain enough tears to keep the eye’s surface lubricated.</p>
+                            <!-- <a href="#" class="btn btn-primary">Read More ...</a> -->
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" class="card-link text-black text-decoration-none m-2 shadow" href="https://www.google.com/">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.allinahealth.org/-/media/allina-health/content/healthy-set-go/hsg-urgent-care-682x408.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Urgent Care</h5>
+                            <p class="card-text">Dry eye syndrome (DES) is a chronic condition that develops when your eyes do not produce and maintain enough tears to keep the eye’s surface lubricated.</p>
+                            <!-- <a href="#" class="btn btn-primary">Read More ...</a> -->
+                        </div>
+                    </div>
+                </a>
+                <a target="_blank" class="card-link text-black text-decoration-none m-2 shadow" href="https://www.google.com/">
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.allseasonsdentalclinic.com/wp-content/uploads/2018/07/why-is-dental-care-so-important.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dental Care</h5>
+                            <p class="card-text">Dry eye syndrome (DES) is a chronic condition that develops when your eyes do not produce and maintain enough tears to keep the eye’s surface lubricated.</p>
+                            <!-- <a href="#" class="btn btn-primary">Read More ...</a> -->
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+        <div>
+            <h3>CONTACT US</h3>
+            <H4><em></em> HealthCare Center</em></H4>
+            <address>0110 S Morris St, Harvard Ave, 01110</address> 
+            <p>Website: healthCare@care.com</p>
+            <p><a href="tel:+4733378901">+00 000 00 000</a></p>
+            <p>Happy to help you!</p>
+        </div>
+    </footer>
+
+<!-- bootstrap script link -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
